@@ -64,7 +64,7 @@ def main():
     quantity = st.number_input("Product Quantity", min_value=1, step=1)
     device_used = st.selectbox("Device Used", ["Mobile", "Laptop", "Tablet", "Desktop"])
     payment_method = st.selectbox("Payment Method", ["Credit Card", "Debit Card", "PayPal", "Others"])
-    is_address_match = st.selectbox("Is the Billing Address the Same as the Shipping Address?", ["Yes", "No"])
+    is_address_match = st.selectbox("Is the Billing Address Same as the Shipping Address?", ["Yes", "No"])
 
     # Derived features
     transaction_day = transaction_date.day  # Day of the month
